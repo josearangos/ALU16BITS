@@ -3979,7 +3979,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="30" x="50" y="50"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="64" y="68">S2</text>
       <circ-port height="8" pin="250,180" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="330,100" width="8" x="56" y="46"/>
+      <circ-port height="8" pin="330,110" width="8" x="56" y="46"/>
       <circ-port height="10" pin="330,260" width="10" x="55" y="75"/>
       <circ-anchor facing="east" height="6" width="6" x="57" y="47"/>
     </appear>
@@ -3988,10 +3988,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(280,150)" to="(280,180)"/>
     <wire from="(330,230)" to="(330,260)"/>
     <wire from="(330,170)" to="(330,200)"/>
+    <wire from="(330,110)" to="(330,140)"/>
     <wire from="(280,150)" to="(320,150)"/>
     <wire from="(280,210)" to="(320,210)"/>
-    <wire from="(330,100)" to="(330,140)"/>
     <comp loc="(330,140)" name="Shifter_Dist:1"/>
+    <comp lib="0" loc="(330,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
     <comp lib="0" loc="(330,260)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
@@ -4004,12 +4010,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Mode"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(330,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
     </comp>
   </circuit>
   <circuit name="Shifter_Dist:4">
